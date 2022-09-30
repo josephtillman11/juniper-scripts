@@ -10,7 +10,7 @@ DEVICE = {
     "auth_strict_key": False
 }
 
-def find_port(patch_port):
+def find_port(patch_port: str) -> str:
     """Get interface descriptions and regex match for interfaces"""
     with JunosDriver(**DEVICE) as conn:
         response = conn.send_command("show interface descriptions | match " + patch_port)
