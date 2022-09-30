@@ -1,4 +1,3 @@
-from inspect import Attribute
 from scrapli.driver.core import JunosDriver
 import re
 import sys
