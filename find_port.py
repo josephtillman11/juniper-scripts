@@ -2,10 +2,7 @@ from inspect import Attribute
 from scrapli.driver.core import JunosDriver
 import re
 import sys
-import logging
 import getpass
-
-logging.basicConfig(filename="debug.txt", level=logging.DEBUG)
 
 DEVICE = {
     "host": sys.argv[1],
